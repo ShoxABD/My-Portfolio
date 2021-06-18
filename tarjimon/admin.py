@@ -4,3 +4,7 @@ from .models import Lugat
 class LugatAdmin(admin.ModelAdmin):
     list_display = ['inglizcha', 'uzbekcha']
 admin.site.register(Lugat, LugatAdmin)
+
+class Meta:
+        verbose_name = "Lugat"
+        verbose_name_plural = "Lugatlar"
